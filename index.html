@@ -9,19 +9,20 @@
     <script src="build/js/app.js"></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class='wrapper1'>
+      <div class="top-item">
+        <h1>Github User Search Tool</h1>
+        <h2>Search by user name</h2>
+        <form id="user-form">
+          <label for="user-name">Github User Name: </label>
+          <input type="text" name="user-name" id="user-name">
+          <button type="submit">Find Repos</button>
+        </form>
       </div>
-      <form id="user-form">
-        <label for="user-name">Github User Name: </label>
-        <input type="text" name="user-name" id="user-name">
-        <button type="submit">Find Repos</button>
-      </form>
-      <div class="show-user-info">
-
+      <div id="show-user-info">
       </div>
-      <div class="show-repos">
-        <h3>Found Repos</h3>
-      </div>
+    </div>
+    <div id="show-repos" class='wrapper'>
     </div>
   </body>
 </html>

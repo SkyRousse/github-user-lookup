@@ -1,8 +1,8 @@
 @import 'bower_components/csstyle/csstyle.scss';
 
-.show-repos, .show-user-info {
-  display: none;
-}
+$green : rgba(163,174,134,.9);
+$blue : rgba(51,59,66,.9);
+$whitish : rgba(244,255,248,1);
 
 img {
    display: block;
@@ -10,6 +10,11 @@ img {
    height: auto;
  }
 
+ul {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: bold;
+}
 
  @mixin flexbox() {
    display: -webkit-box;
@@ -37,14 +42,29 @@ img {
 
  .wrapper {
    @include flexbox();
+   flex-wrap: wrap;
+   flex-direction: row;
+ }
+ .wrapper1 {
+   @include flexbox();
+   flex-wrap: wrap;
+   flex-direction: row;
  }
 
  .item {
-   @include flex(1 200px);
-   @include order(2);
-   background: pink;
-   height:150px;
+   @include flex(1 20%);
+   background: $blue;
+   color: $whitish;
+   height:200px;
    margin:10px;
    padding:25px;
    text-align: center;
+ }
+
+ .top-item {
+   @include flex(1 50%);
+   background: $green;
+   color: $blue;
+   margin:10px;
+   padding:25px;
  }
