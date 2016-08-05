@@ -4,12 +4,13 @@ function GitUser() {
 
 }
 
-GitUser.prototype.exports.getRepos = function(userName){
-  $.get('https://api.github.com/users/' + 'userName' + '?access_token=' + apiKey).then(function(response){
+GitUser.prototype.getRepos = function(userName, displayFunction) {
+  $.get('https://api.github.com/users/' + userName + '?access_token=' + apiKey).then(function(response){
     console.log(response);
-    // displayFunction(userName, response.dig-into-api);
+    displayFunction(userName, response.user.repos);
   }).fail(function(error){
     console.log(error.responseJSON.message);
+    $('.showRepos').text(error.responseJSON.message);
   });
 };
 
