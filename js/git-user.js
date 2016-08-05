@@ -15,6 +15,7 @@ GitUser.prototype.getRepos = function(userName, displayFunction) {
       console.log("Description:" + repoDescription);
       displayFunction(repoName, repoDescription);
     })
+  $('.show-repos').show();
   }).fail(function(error){
     console.log(error.responseJSON.message);
     $('.showRepos').text(error.responseJSON.message);
