@@ -15,7 +15,7 @@ GitUser.prototype.getUserInfo = function(userName, displayUser) {
     displayUser(name, email, followers, following, publicRepos, avatarUrl);
   }).fail(function(error){
     console.log(error.responseJSON.message);
-    $('#showRepos').text(error.responseJSON.message);
+    $('#showRepos').html("<h3>Whoops looks like that's not a user</h3>" + error.responseJSON.message);
   });
 };
 
@@ -30,7 +30,7 @@ GitUser.prototype.getRepos = function(userName, displayRepos) {
     })
   }).fail(function(error){
     console.log(error.responseJSON.message);
-    $('#showRepos').text(error.responseJSON.message);
+    $('#showRepos').html("<h3>Whoops looks like that's not a user</h3>" + error.responseJSON.message);
   });
 };
 
