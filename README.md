@@ -35,7 +35,10 @@ $ bower install
 Build : $ gulp build
 ```
 ```
-Build : $ gulp serve
+Build Bower: $ gulp bower
+```
+```
+Launch : $ gulp serve
 ```
 
 ## Using SASS
