@@ -6,7 +6,7 @@
     "sr <skyrousse@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/SkyRousse/github-user-lookup",
   "ignore": [
     "**/.*",
     "node_modules",
