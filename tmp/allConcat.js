@@ -4,16 +4,17 @@ var displayRepos = function(repoName, repoDescription) {
   $('.show-repos').append('<tr> + <td>' + repoName + '</td> + <td>' + repoDescription + '</td><tr>')
 }
 
-var showTable = function() {
-  $('.show-repos').show();
-};
+// var displayUser = function(name, )
 
 $(document).ready(function() {
-  var currentUserObject = new GitUser();
+  var userObjectSearch = new GitUser();
   $('#user-form').submit(function(event) {
     event.preventDefault();
+    $('.show-repos').empty();
     var userName = $('#user-name').val();
     $('#user-name').val("");
-    currentUserObject.getRepos(userName, displayRepos);
+    userObjectSearch.getRepos(userName, displayRepos);
+    $('.show-repos').show();
+    userObjectSearch.getUserInfo(userName/*, displayUser*/);
   });
 });
