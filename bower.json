@@ -1,0 +1,21 @@
+{
+  "name": "github-user-lookup",
+  "description": "",
+  "main": "gulfile.js",
+  "authors": [
+    "sr <skyrousse@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "moment": "^2.14.1"
+  }
+}
