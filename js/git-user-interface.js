@@ -1,7 +1,7 @@
 var GitUser = require('./../js/git-user.js').gituserModule;
 
-var displayRepos = function(userName, repoData) {
-  $('.showRepos').text(repoData);
+var displayRepos = function(repoName, repoDescription) {
+  $('.show-repos').append('<tr> + <td>' + repoName + '</td> + <td>' + repoDescription + '</td><tr>')
 }
 
 $(document).ready(function() {
