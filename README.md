@@ -17,7 +17,7 @@ Installation
 ------------
 
 ```
-$ git clone https://github.com/SkyRousse/BEERSavvy.git
+$ git clone https://github.com/SkyRousse/github-user-lookup.git
 ```
 ```
 Get an API key: Visit the Settings area of your GitHub account, select Personal Access Tokens from the sidebar, and hit Generate New Token.
@@ -30,12 +30,6 @@ $ npm install
 ```
 ```
 $ bower install
-```
-```
-Build : $ gulp build
-```
-```
-Build Bower: $ gulp bower
 ```
 ```
 Launch : $ gulp serve
